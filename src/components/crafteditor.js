@@ -1,38 +1,13 @@
 import React from 'react';
-import { Editor, Frame, Element, useEditor } from '@craftjs/core';
+import { Editor, Frame, Element } from '@craftjs/core';
 import TextComponent from './elements/textcomponent';
-import ToolboxItem from './ToolboxItem';
-import { Typography } from '@material-ui/core';
-
-const Toolbox = () => {
-  return (
-    <div style={{ padding: '16px', borderBottom: '1px solid #ddd' }}>
-      <Typography variant="h6">Componentes</Typography>
-      <ToolboxItem type="TextComponent">Bloque de texto</ToolboxItem>
-    </div>
-  );
-};
-
-const SettingsPanel = () => {
-  const { selected } = useEditor((state) => {
-    const [currentNodeId] = state.events.selected;
-    const currentNode = state.nodes[currentNodeId];
-    return {
-      selected: currentNode && currentNode.related && currentNode.related.settings,
-    };
-  });
-
-  return (
-    <div style={{ padding: '16px' }}>
-      {selected && React.createElement(selected)}
-    </div>
-  );
-};
+import Toolbox from './Toolbox';
+import SettingsPanel from './SettingsPanel';
 
 const CraftEditor = () => {
   return (
     <div style={{ display: 'flex', height: '100vh' }}>
-      <Editor resolver={{TextComponent }}>
+      <Editor resolver={{ TextComponent }}>
         <div style={{ width: '20%', borderRight: '1px solid #ddd' }}>
           <Toolbox />
         </div>
@@ -52,3 +27,4 @@ const CraftEditor = () => {
 };
 
 export default CraftEditor;
+
