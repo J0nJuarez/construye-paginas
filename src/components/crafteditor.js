@@ -15,7 +15,8 @@ const CraftEditor = () => {
         <div style={{ flex: 1, padding: '16px', overflowY:'auto', overflowWrap:'break-word' }}>
           <Frame>
             <Element is="div" canvas>
-              <TextComponent text="Hola, Craft.js con Material-UI" />
+              <TextComponent text="Hola, Dinopreneur"/>
+              <ButtonComponent text="Botoneame"/>
             </Element>
           </Frame>
         </div>

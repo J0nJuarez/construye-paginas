@@ -50,7 +50,7 @@ const TextSettings = () => {
 TextComponent.craft = {
   props: {
     text: 'Texto de ejemplo',
-    fontSize: '16px',
+    fontSize: '36px',
     color: '#000'
   },
   related: {
