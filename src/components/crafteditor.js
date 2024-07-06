@@ -11,7 +11,7 @@ const CraftEditor = () => {
         <div style={{ width: '20%', borderRight: '1px solid #ddd' }}>
           <Toolbox />
         </div>
-        <div style={{ flex: 1, padding: '16px' }}>
+        <div style={{ flex: 1, padding: '16px', overflowY:'auto', overflowWrap:'break-word' }}>
           <Frame>
             <Element is="div" canvas>
               <TextComponent text="Hola, Craft.js con Material-UI" />
