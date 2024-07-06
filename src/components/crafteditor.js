@@ -3,11 +3,12 @@ import { Editor, Frame, Element } from '@craftjs/core';
 import TextComponent from './elements/textcomponent';
 import Toolbox from './Toolbox';
 import SettingsPanel from './SettingsPanel';
+import ButtonComponent from './elements/Buttoncomponent';
 
 const CraftEditor = () => {
   return (
     <div style={{ display: 'flex', height: '100vh' }}>
-      <Editor resolver={{ TextComponent }}>
+      <Editor resolver={{ TextComponent, ButtonComponent }}>
         <div style={{ width: '20%', borderRight: '1px solid #ddd' }}>
           <Toolbox />
         </div>

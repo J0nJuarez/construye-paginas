@@ -1,25 +1,26 @@
 import React from 'react';
 import { useNode } from '@craftjs/core';
-import { Typography, TextField } from '@material-ui/core';
+import { Button, TextField, MenuItem, Select, FormControl, InputLabel } from '@material-ui/core';
 
-const TextComponent = ({ text, fontSize, color }) => {
+const ButtonComponent = ({ text, fontSize, color, variant }) => {
   const { connectors: { connect, drag } } = useNode();
   return (
-    <Typography
+    <Button
       ref={ref => connect(drag(ref))}
-      variant="body1"
+      variant={variant}
       style={{ fontSize, color }}
     >
       {text}
-    </Typography>
+    </Button>
   );
 };
 
-const TextSettings = () => {
-  const { actions, text, fontSize, color } = useNode(node => ({
+const ButtonSettings = () => {
+  const { actions, text, fontSize, color, variant } = useNode(node => ({
     text: node.data.props.text,
     fontSize: node.data.props.fontSize,
-    color: node.data.props.color
+    color: node.data.props.color,
+    variant: node.data.props.variant
   }));
 
   return (
@@ -43,21 +44,32 @@ const TextSettings = () => {
         value={color}
         onChange={e => actions.setProp(props => props.color = e.target.value)}
       />
+      <FormControl fullWidth margin="normal">
+        <InputLabel>Variante</InputLabel>
+        <Select
+          value={variant}
+          onChange={e => actions.setProp(props => props.variant = e.target.value)}
+        >
+          <MenuItem value="contained">Contained</MenuItem>
+          <MenuItem value="outlined">Outlined</MenuItem>
+          <MenuItem value="text">Text</MenuItem>
+        </Select>
+      </FormControl>
     </div>
   );
 };
 
-TextComponent.craft = {
+ButtonComponent.craft = {
   props: {
     text: 'Texto de ejemplo',
     fontSize: '16px',
-    color: '#000'
+    color: '#000000', 
+    variant: 'contained'
   },
   related: {
-    settings: TextSettings
+    settings: ButtonSettings
   }
 };
 
-export default TextComponent;
-
+export default ButtonComponent;
 
