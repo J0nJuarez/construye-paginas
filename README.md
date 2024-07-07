@@ -1,4 +1,4 @@
-# Page Builder with React and Craft.js
+# Dinopreneur Page-Builder with React and Craft.js
 ====================================
 
 ## Table of Contents
@@ -15,7 +15,7 @@
 ### Introduction
 ------------
 
-Welcome to the Page Builder project! This project is a powerful and flexible page builder created using React and Craft.js. It allows users to create custom web pages effortlessly with a drag-and-drop interface, providing a seamless experience for developers and non-developers alike.
+Welcome to the Dinopreneur Page-Builder project! This project is a powerful and flexible page builder created using React and Craft.js. It allows users to create custom web pages effortlessly with a drag-and-drop interface, providing a seamless experience for developers and non-developers alike.
 
 ### Features
 --------
@@ -34,30 +34,20 @@ To get started with the Page Builder, follow these steps:
 
 1.  **Clone the Repository**
 
-    bash
-
-    Copiar código
-
-    `git clone https://github.com/your-username/page-builder.git
-    cd page-builder`
+    `git clone https://github.com/J0nJuarez/construye-paginas.git
+    cd contruye-paginas`
 
 2.  **Install Dependencies**
 
-    bash
-
-    Copiar código
-
     `npm install`
 
-3.  **Start the Development Server**
-
-    bash
-
-    Copiar código
+3.  **Start the Development Server** 
 
     `npm start`
 
-4.  **Open Your Browser** Navigate to `http://localhost:3000` to see the application in action.
+4.  **Open Your Browser** 
+
+    Navigate to `http://localhost:3000` to see the application in action.
 
 ### Usage
 -----
@@ -88,27 +78,18 @@ We welcome contributions to improve the Page Builder. To contribute:
 
 1.  **Fork the Repository**
 
+    `git clone https://github.com/J0nJuarez/construye-paginas.git
+    cd contruye-paginas`
+
 2.  **Create a Branch**
-
-    bash
-
-    Copiar código
 
     `git checkout -b feature/your-feature-name`
 
 3.  **Commit Your Changes**
 
-    bash
-
-    Copiar código
-
     `git commit -m 'Add some feature'`
 
 4.  **Push to the Branch**
-
-    bash
-
-    Copiar código
 
     `git push origin feature/your-feature-name`
 
@@ -124,6 +105,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 Contact
 -------
 
-If you have any questions or suggestions, feel free to contact us at your-email@example.com.
+If you have any questions or suggestions, feel free to contact us at jonjuarez.contacto@gmail.com.
 
 Happy building!
