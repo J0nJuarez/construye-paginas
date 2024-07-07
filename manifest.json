@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Dinopreneur Editor",
+  "name": "Dinopreneur Page-Builder for web construction",
   "icons": [
     {
       "src": "favicon.ico",
