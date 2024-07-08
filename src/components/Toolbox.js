@@ -8,7 +8,7 @@ const Toolbox = () => {
   const { connectors } = useEditor();
   
   return (
-    <div style={{ padding: '16px', borderBottom: '1px solid #ddd', display:'flex', flexDirection: 'row', flexWrap:'wrap',gap:'10%' }}>
+    <div style={{ padding: '16px', borderBottom: '1px solid #ddd', display:'flex', flexDirection: 'column', gap:'5%' }}>
       <Typography style={{width:'100%'}} variant="h6">Componentes</Typography>
       <Paper
         ref={ref => connectors.create(ref, <TextComponent text="Nuevo Texto" />)}
